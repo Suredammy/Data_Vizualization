@@ -26,13 +26,13 @@ freq_2 = [result_2.count(values) for values in range(3, max_value +1)]
 
 #Plot bar chart with matplotlib
 plt.style.use("fivethirtyeight") #set the plot style
-fig, ax = plt.subplots(figsize = (16, 9))
+fig, ax = plt.subplots(figsize = (12, 9))
 n_groups = len(range(3, max_value +1))
 x_index = (str(i) for i in range(3, max_value +1))
 
 
 index = np.arange(start = min_value, stop = max_value + 1, step = 1)
-print(index)
+
 bar_width = 0.4
 opacity = 0.6
 
@@ -48,6 +48,7 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
+
 
 
 # Visualize the result_1 with plotly
